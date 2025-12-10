@@ -74,8 +74,11 @@ function About() {
             transition={{ delay: 0.35, duration: 0.6 }}
           >
             <img
-              src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?w=700&h=450&fit=crop"
+              src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?w=700&h=450&fit=crop&auto=format&q=70"
               alt="About CineScope"
+              loading="lazy"
+              width="700"
+              height="450"
             />
             <div className="hero-image-overlay">
               <span className="hero-badge">

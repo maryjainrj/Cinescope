@@ -789,6 +789,42 @@ section[class*="section-"]:last-of-type {
   max-width: 100%;
 }
 
+/* Skeletons */
+.skeleton-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-box {
+  background: linear-gradient(90deg, #1c1c1c 25%, #2a2a2a 50%, #1c1c1c 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  height: 250px;
+  border-radius: 12px;
+}
+
+.skeleton-lines {
+  padding: 0.8rem;
+}
+
+.skeleton-line {
+  display: block;
+  height: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #1c1c1c 25%, #2a2a2a 50%, #1c1c1c 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+.skeleton-line.short { width: 60%; }
+.skeleton-line.thin { width: 40%; height: 8px; }
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
 /* Movies Hero Banner */
 .movies-hero-banner {
   background: linear-gradient(135deg, #111 0%, #1c1c1c 100%);
@@ -1040,6 +1076,190 @@ section[class*="section-"]:last-of-type {
   border-radius: 10px;
 }
 
+.trailer-thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.trailer-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.trailer-thumb-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.55), rgba(0,0,0,0.75));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.trailer-thumb-overlay i {
+  color: var(--text-light);
+  font-size: 2.5rem;
+  background: var(--accent-red);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 30px rgba(229, 9, 20, 0.4);
+}
+
+.trailer-thumb:hover .trailer-thumb-overlay {
+  background: linear-gradient(135deg, rgba(0,0,0,0.35), rgba(0,0,0,0.6));
+}
+
+/* Movie Metadata (Runtime, Language, Director) */
+.movie-metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border-grey);
+  border-bottom: 1px solid var(--border-grey);
+}
+
+.metadata-item {
+  display: flex;
+  align-items: center;
+  color: var(--text-grey);
+  font-size: 0.95rem;
+}
+
+.metadata-item i {
+  color: var(--accent-red);
+  font-size: 1rem;
+}
+
+/* Streaming Badges */
+.streaming-section h5 {
+  color: var(--text-light);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.streaming-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.streaming-badge {
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  background: linear-gradient(135deg, var(--card-bg), var(--bg-light));
+  border: 1px solid var(--border-grey);
+  color: var(--text-light);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.streaming-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.3);
+}
+
+/* Platform-specific colors */
+.streaming-badge.netflix {
+  background: linear-gradient(135deg, #E50914, #B20710);
+  border-color: #E50914;
+}
+
+.streaming-badge.amazon-prime {
+  background: linear-gradient(135deg, #00A8E1, #0081B3);
+  border-color: #00A8E1;
+}
+
+.streaming-badge.hbo-max {
+  background: linear-gradient(135deg, #9C27B0, #7B1FA2);
+  border-color: #9C27B0;
+}
+
+.streaming-badge.disney {
+  background: linear-gradient(135deg, #113CCF, #0D2B91);
+  border-color: #113CCF;
+}
+
+.streaming-badge.paramount {
+  background: linear-gradient(135deg, #0064FF, #0047B3);
+  border-color: #0064FF;
+}
+
+.streaming-badge.hulu {
+  background: linear-gradient(135deg, #1CE783, #14B566);
+  border-color: #1CE783;
+}
+
+.streaming-badge.peacock {
+  background: linear-gradient(135deg, #000000, #333333);
+  border-color: #555555;
+}
+
+.streaming-badge.apple-tv {
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  border-color: #333333;
+}
+
+/* Cast Section */
+.cast-section h5 {
+  color: var(--text-light);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.cast-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.cast-member {
+  padding: 0.6rem 1.2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-grey);
+  border-radius: 25px;
+  color: var(--text-grey);
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.cast-member:hover {
+  background: var(--bg-light);
+  color: var(--text-light);
+  border-color: var(--accent-red);
+  transform: translateY(-2px);
+}
+
+/* Similar Movies Section */
+.similar-movies-section {
+  border-top: 2px solid var(--border-grey);
+}
+
+.similar-movies-section h2 {
+  color: var(--text-light);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.similar-movies-section h2 i {
+  color: var(--accent-red);
+}
+
 @media (max-width: 768px) {
   .rating-stars {
     font-size: 1.5rem;
@@ -1047,6 +1267,21 @@ section[class*="section-"]:last-of-type {
   
   .trailer-container {
     padding-bottom: 75%; /* Adjust for mobile */
+  }
+  
+  .movie-metadata {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .streaming-badges,
+  .cast-list {
+    justify-content: center;
+  }
+  
+  .similar-movies-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
 
@@ -1273,6 +1508,10 @@ section[class*="section-"]:last-of-type {
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+}
+
+.news-card.skeleton-card {
+  border: 1px solid var(--border-grey);
 }
 
 .news-card:hover .news-image {

@@ -7,7 +7,12 @@
     "rating": 4.8,
     "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
     "description": "A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
-    "trailerUrl": "https://www.youtube.com/embed/YoHD9XEInc0"
+    "trailerUrl": "https://www.youtube.com/embed/YoHD9XEInc0",
+    "runtime": "148 min",
+    "director": "Christopher Nolan",
+    "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Elliot Page", "Tom Hardy"],
+    "language": "English, Japanese, French",
+    "streaming": ["Netflix", "Amazon Prime", "HBO Max"]
   },
   {
     "id": 2,
@@ -17,7 +22,12 @@
     "rating": 4.9,
     "poster": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
     "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
-    "trailerUrl": "https://www.youtube.com/embed/zSWdZVtXT7E"
+    "trailerUrl": "https://www.youtube.com/embed/zSWdZVtXT7E",
+    "runtime": "169 min",
+    "director": "Christopher Nolan",
+    "cast": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain", "Michael Caine"],
+    "language": "English",
+    "streaming": ["Paramount+", "Amazon Prime"]
   },
   {
     "id": 3,
@@ -27,7 +37,12 @@
     "rating": 5.0,
     "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
     "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological tests.",
-    "trailerUrl": "https://www.youtube.com/embed/EXeTwQWrcwY"
+    "trailerUrl": "https://www.youtube.com/embed/EXeTwQWrcwY",
+    "runtime": "152 min",
+    "director": "Christopher Nolan",
+    "cast": ["Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine"],
+    "language": "English, Mandarin",
+    "streaming": ["HBO Max", "Amazon Prime"]
   },
   {
     "id": 4,
@@ -37,7 +52,12 @@
     "rating": 4.7,
     "poster": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
     "description": "The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption.",
-    "trailerUrl": "https://www.youtube.com/embed/s7EdQ4FqbhY"
+    "trailerUrl": "https://www.youtube.com/embed/s7EdQ4FqbhY",
+    "runtime": "154 min",
+    "director": "Quentin Tarantino",
+    "cast": ["John Travolta", "Uma Thurman", "Samuel L. Jackson", "Bruce Willis"],
+    "language": "English, Spanish, French",
+    "streaming": ["Netflix", "Amazon Prime"]
   },
   {
     "id": 5,
@@ -47,7 +67,12 @@
     "rating": 4.6,
     "poster": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
     "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
-    "trailerUrl": "https://www.youtube.com/embed/vKQi3bBA1y8"
+    "trailerUrl": "https://www.youtube.com/embed/vKQi3bBA1y8",
+    "runtime": "136 min",
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "cast": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss", "Hugo Weaving"],
+    "language": "English",
+    "streaming": ["HBO Max", "Amazon Prime"]
   },
   {
     "id": 6,
@@ -57,7 +82,12 @@
     "rating": 4.8,
     "poster": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
     "description": "The presidencies of Kennedy and Johnson unfold through the perspective of an Alabama man with an IQ of 75.",
-    "trailerUrl": "https://www.youtube.com/embed/bLvqoHBptjg"
+    "trailerUrl": "https://www.youtube.com/embed/bLvqoHBptjg",
+    "runtime": "142 min",
+    "director": "Robert Zemeckis",
+    "cast": ["Tom Hanks", "Robin Wright", "Gary Sinise", "Sally Field"],
+    "language": "English",
+    "streaming": ["Paramount+", "Amazon Prime"]
   },
   {
     "id": 7,
@@ -67,7 +97,12 @@
     "rating": 4.9,
     "poster": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg",
     "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
-    "trailerUrl": "https://www.youtube.com/embed/NmzuHjWmXOc"
+    "trailerUrl": "https://www.youtube.com/embed/NmzuHjWmXOc",
+    "runtime": "142 min",
+    "director": "Frank Darabont",
+    "cast": ["Tim Robbins", "Morgan Freeman", "Bob Gunton", "William Sadler"],
+    "language": "English",
+    "streaming": ["Netflix", "HBO Max"]
   },
   {
     "id": 8,
@@ -77,7 +112,12 @@
     "rating": 4.5,
     "poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
     "description": "After the devastating events of Infinity War, the Avengers assemble once more to reverse Thanos' actions and restore balance to the universe.",
-    "trailerUrl": "https://www.youtube.com/embed/TcMBFSGVi1c"
+    "trailerUrl": "https://www.youtube.com/embed/TcMBFSGVi1c",
+    "runtime": "181 min",
+    "director": "Anthony Russo, Joe Russo",
+    "cast": ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo", "Chris Hemsworth"],
+    "language": "English",
+    "streaming": ["Disney+"]
   },
   {
     "id": 9,
@@ -87,7 +127,12 @@
     "rating": 4.7,
     "poster": "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg",
     "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
-    "trailerUrl": "https://www.youtube.com/embed/5xH0HfJHsaY"
+    "trailerUrl": "https://www.youtube.com/embed/5xH0HfJHsaY",
+    "runtime": "132 min",
+    "director": "Bong Joon-ho",
+    "cast": ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong", "Choi Woo-shik"],
+    "language": "Korean, English",
+    "streaming": ["Hulu", "Amazon Prime"]
   },
   {
     "id": 10,
@@ -97,7 +142,12 @@
     "rating": 4.6,
     "poster": "https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
     "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
-    "trailerUrl": "https://www.youtube.com/embed/owK1qxDselE"
+    "trailerUrl": "https://www.youtube.com/embed/owK1qxDselE",
+    "runtime": "155 min",
+    "director": "Ridley Scott",
+    "cast": ["Russell Crowe", "Joaquin Phoenix", "Connie Nielsen", "Oliver Reed"],
+    "language": "English",
+    "streaming": ["Paramount+", "Amazon Prime"]
   },
   {
     "id": 11,
@@ -107,7 +157,12 @@
     "rating": 4.8,
     "poster": "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
     "description": "A young FBI cadet must receive the help of an incarcerated cannibal killer to catch another serial killer who skins his victims.",
-    "trailerUrl": "https://www.youtube.com/embed/W6Mm8Sbe__o"
+    "trailerUrl": "https://www.youtube.com/embed/W6Mm8Sbe__o",
+    "runtime": "118 min",
+    "director": "Jonathan Demme",
+    "cast": ["Jodie Foster", "Anthony Hopkins", "Scott Glenn", "Ted Levine"],
+    "language": "English",
+    "streaming": ["Netflix", "Hulu"]
   },
   {
     "id": 12,
@@ -117,7 +172,12 @@
     "rating": 4.7,
     "poster": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_SX300.jpg",
     "description": "Teen Miles Morales becomes Spider-Man and must help others with the same powers from different dimensions to stop a threat to all realities.",
-    "trailerUrl": "https://www.youtube.com/embed/tg52up16eq0"
+    "trailerUrl": "https://www.youtube.com/embed/tg52up16eq0",
+    "runtime": "117 min",
+    "director": "Bob Persichetti, Peter Ramsey, Rodney Rothman",
+    "cast": ["Shameik Moore", "Jake Johnson", "Hailee Steinfeld", "Mahershala Ali"],
+    "language": "English, Spanish",
+    "streaming": ["Netflix"]
   },
   {
     "id": 13,
@@ -127,7 +187,12 @@
     "rating": 4.9,
     "poster": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
     "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant youngest son.",
-    "trailerUrl": "https://www.youtube.com/embed/UaVTIH8mujA"
+    "trailerUrl": "https://www.youtube.com/embed/UaVTIH8mujA",
+    "runtime": "175 min",
+    "director": "Francis Ford Coppola",
+    "cast": ["Marlon Brando", "Al Pacino", "James Caan", "Diane Keaton"],
+    "language": "English, Italian, Latin",
+    "streaming": ["Paramount+", "Amazon Prime"]
   },
   {
     "id": 14,
@@ -137,7 +202,12 @@
     "rating": 4.5,
     "poster": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
     "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
-    "trailerUrl": "https://www.youtube.com/embed/kVrqfYjkTdQ"
+    "trailerUrl": "https://www.youtube.com/embed/kVrqfYjkTdQ",
+    "runtime": "194 min",
+    "director": "James Cameron",
+    "cast": ["Leonardo DiCaprio", "Kate Winslet", "Billy Zane", "Kathy Bates"],
+    "language": "English, Swedish, Italian",
+    "streaming": ["Paramount+", "Amazon Prime"]
   },
   {
     "id": 15,
@@ -147,7 +217,12 @@
     "rating": 4.6,
     "poster": "https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_SX300.jpg",
     "description": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
-    "trailerUrl": "https://www.youtube.com/embed/lFzVJEksoDY"
+    "trailerUrl": "https://www.youtube.com/embed/lFzVJEksoDY",
+    "runtime": "88 min",
+    "director": "Roger Allers, Rob Minkoff",
+    "cast": ["Matthew Broderick", "Jeremy Irons", "James Earl Jones", "Moira Kelly"],
+    "language": "English, Swahili",
+    "streaming": ["Disney+"]
   },
   {
     "id": 16,
@@ -157,7 +232,12 @@
     "rating": 4.7,
     "poster": "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_SX300.jpg",
     "description": "A pragmatic paleontologist touring an almost complete theme park is tasked with protecting a couple of kids when a power breakdown allows the park's cloned dinosaurs to run loose.",
-    "trailerUrl": "https://www.youtube.com/embed/lc0UehYemQA"
+    "trailerUrl": "https://www.youtube.com/embed/lc0UehYemQA",
+    "runtime": "127 min",
+    "director": "Steven Spielberg",
+    "cast": ["Sam Neill", "Laura Dern", "Jeff Goldblum", "Richard Attenborough"],
+    "language": "English, Spanish",
+    "streaming": ["Netflix", "Amazon Prime"]
   },
   {
     "id": 17,
@@ -167,7 +247,12 @@
     "rating": 4.8,
     "poster": "https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
     "description": "A teenager is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his friend, a mad scientist.",
-    "trailerUrl": "https://www.youtube.com/embed/qvsgGtivCgs"
+    "trailerUrl": "https://www.youtube.com/embed/qvsgGtivCgs",
+    "runtime": "116 min",
+    "director": "Robert Zemeckis",
+    "cast": ["Michael J. Fox", "Christopher Lloyd", "Lea Thompson", "Crispin Glover"],
+    "language": "English",
+    "streaming": ["Netflix", "Amazon Prime"]
   },
   {
     "id": 18,
@@ -177,7 +262,12 @@
     "rating": 4.5,
     "poster": "https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
     "description": "When a killer shark unleashes chaos on a beach community, the police chief has only one choice - to hunt it down.",
-    "trailerUrl": "https://www.youtube.com/embed/U1fu_sA7XhE"
+    "trailerUrl": "https://www.youtube.com/embed/U1fu_sA7XhE",
+    "runtime": "124 min",
+    "director": "Steven Spielberg",
+    "cast": ["Roy Scheider", "Robert Shaw", "Richard Dreyfuss", "Lorraine Gary"],
+    "language": "English",
+    "streaming": ["Peacock", "Amazon Prime"]
   },
   {
     "id": 19,
@@ -187,7 +277,12 @@
     "rating": 4.6,
     "poster": "https://m.media-amazon.com/images/M/MV5BMTQ2ODFlMDAtNzdhOC00ZDYzLWE3YTMtNDU4ZGFmZmJmYTczXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
     "description": "A troubled child summons the courage to help a friendly alien escape Earth and return to his home world.",
-    "trailerUrl": "https://www.youtube.com/embed/qYAETtIIClk"
+    "trailerUrl": "https://www.youtube.com/embed/qYAETtIIClk",
+    "runtime": "115 min",
+    "director": "Steven Spielberg",
+    "cast": ["Henry Thomas", "Drew Barrymore", "Peter Coyote", "Dee Wallace"],
+    "language": "English",
+    "streaming": ["Peacock", "Netflix"]
   },
   {
     "id": 20,
@@ -197,7 +292,12 @@
     "rating": 4.7,
     "poster": "https://m.media-amazon.com/images/M/MV5BMWM4NTFhYjctNzUyNi00NGMwLTk3NTYtMDIyNTZmMzRlYmQyXkEyXkFqcGdeQXVyMTAwMzUyOTc@._V1_SX300.jpg",
     "description": "A frightened, withdrawn Philadelphia boy who communicates with ghosts seeks help from a dispassionate child psychologist.",
-    "trailerUrl": "https://www.youtube.com/embed/3-ZP95NF_Wk"
+    "trailerUrl": "https://www.youtube.com/embed/3-ZP95NF_Wk",
+    "runtime": "107 min",
+    "director": "M. Night Shyamalan",
+    "cast": ["Bruce Willis", "Haley Joel Osment", "Toni Collette", "Olivia Williams"],
+    "language": "English, Spanish, Latin",
+    "streaming": ["Hulu", "Amazon Prime"]
   },
   {
     "id": 21,
@@ -207,7 +307,12 @@
     "rating": 4.4,
     "poster": "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
     "description": "Earth's mightiest heroes must come together and learn to fight as a team to save the world from an alien attack.",
-    "trailerUrl": "https://www.youtube.com/embed/eOrNdBpGMv8"
+    "trailerUrl": "https://www.youtube.com/embed/eOrNdBpGMv8",
+    "runtime": "143 min",
+    "director": "Joss Whedon",
+    "cast": ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson", "Mark Ruffalo"],
+    "language": "English, Russian",
+    "streaming": ["Disney+"]
   },
   {
     "id": 22,
@@ -217,7 +322,12 @@
     "rating": 4.6,
     "poster": "https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
     "description": "Paul Atreides, a brilliant young man, must travel to the dangerous planet Arrakis to ensure the future of his family and people.",
-    "trailerUrl": "https://www.youtube.com/embed/8g18jFHCLXk"
+    "trailerUrl": "https://www.youtube.com/embed/8g18jFHCLXk",
+    "runtime": "155 min",
+    "director": "Denis Villeneuve",
+    "cast": ["Timothée Chalamet", "Rebecca Ferguson", "Zendaya", "Oscar Isaac"],
+    "language": "English",
+    "streaming": ["HBO Max", "Amazon Prime"]
   },
   {
     "id": 23,
@@ -227,7 +337,12 @@
     "rating": 4.6,
     "poster": "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_SX300.jpg",
     "description": "Eight years after taking the fall for the crimes of Harvey Dent, Batman braces himself for onslaught from an imposing terrorist called Bane.",
-    "trailerUrl": "https://www.youtube.com/embed/g8evyE9TuYk"
+    "trailerUrl": "https://www.youtube.com/embed/g8evyE9TuYk",
+    "runtime": "164 min",
+    "director": "Christopher Nolan",
+    "cast": ["Christian Bale", "Tom Hardy", "Anne Hathaway", "Gary Oldman"],
+    "language": "English",
+    "streaming": ["HBO Max", "Amazon Prime"]
   },
   {
     "id": 24,
@@ -237,7 +352,12 @@
     "rating": 4.7,
     "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
     "description": "An extended exploration of dreams within dreams with new footage and alternate endings.",
-    "trailerUrl": "https://www.youtube.com/embed/YoHD9XEInc0"
+    "trailerUrl": "https://www.youtube.com/embed/YoHD9XEInc0",
+    "runtime": "165 min",
+    "director": "Christopher Nolan",
+    "cast": ["Leonardo DiCaprio", "Marion Cotillard", "Joseph Gordon-Levitt", "Tom Hardy"],
+    "language": "English, Japanese, French",
+    "streaming": ["HBO Max"]
   },
   {
     "id": 25,
@@ -247,7 +367,12 @@
     "rating": 4.5,
     "poster": "https://m.media-amazon.com/images/M/MV5BZDA0OGQxNTItMDZkMC00N2UyLTg3MzMtYTJmNjg3Nzk5MzRiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
     "description": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
-    "trailerUrl": "https://www.youtube.com/embed/5PSNL1qE6VY"
+    "trailerUrl": "https://www.youtube.com/embed/5PSNL1qE6VY",
+    "runtime": "162 min",
+    "director": "James Cameron",
+    "cast": ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver", "Stephen Lang"],
+    "language": "English, Spanish",
+    "streaming": ["Disney+", "Amazon Prime"]
   },
   {
     "id": 26,
@@ -257,7 +382,12 @@
     "rating": 4.6,
     "poster": "https://m.media-amazon.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_SX300.jpg",
     "description": "Paranormal investigators work to help a family terrorized by a dark presence in their farmhouse.",
-    "trailerUrl": "https://www.youtube.com/embed/k10ETZ41q5o"
+    "trailerUrl": "https://www.youtube.com/embed/k10ETZ41q5o",
+    "runtime": "112 min",
+    "director": "James Wan",
+    "cast": ["Patrick Wilson", "Vera Farmiga", "Ron Livingston", "Lili Taylor"],
+    "language": "English, Latin",
+    "streaming": ["HBO Max", "Netflix"]
   },
   {
     "id": 27,
@@ -267,7 +397,12 @@
     "rating": 4.5,
     "poster": "https://m.media-amazon.com/images/M/MV5BMjA4MDU0NTUyN15BMl5BanBnXkFtZTgwMzQxMzY1MjE@._V1_SX300.jpg",
     "description": "A group of American soldiers fight their way through Nazi-occupied Germany.",
-    "trailerUrl": "https://www.youtube.com/embed/q94n3eWOWXM"
+    "trailerUrl": "https://www.youtube.com/embed/q94n3eWOWXM",
+    "runtime": "134 min",
+    "director": "David Ayer",
+    "cast": ["Brad Pitt", "Shia LaBeouf", "Logan Lerman", "Michael Peña"],
+    "language": "English, German",
+    "streaming": ["Netflix", "Amazon Prime"]
   },
   {
     "id": 28,
@@ -277,7 +412,12 @@
     "rating": 4.4,
     "poster": "https://m.media-amazon.com/images/M/MV5BMTkxNTk1ODcxNl5BMl5BanBnXkFtZTcwMDI1OTMzOQ@@._V1_SX300.jpg",
     "description": "A poor man enters high society to impress the love of his life with newfound wealth.",
-    "trailerUrl": "https://www.youtube.com/embed/rARN6agiW7o"
+    "trailerUrl": "https://www.youtube.com/embed/rARN6agiW7o",
+    "runtime": "143 min",
+    "director": "Baz Luhrmann",
+    "cast": ["Leonardo DiCaprio", "Carey Mulligan", "Joel Edgerton", "Tobey Maguire"],
+    "language": "English",
+    "streaming": ["Netflix", "Hulu"]
   },
   {
     "id": 29,
@@ -287,7 +427,12 @@
     "rating": 4.7,
     "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE@._V1_SX300.jpg",
     "description": "Two sisters must work together to end eternal winter and save their kingdom.",
-    "trailerUrl": "https://www.youtube.com/embed/TbQm5doF_Uc"
+    "trailerUrl": "https://www.youtube.com/embed/TbQm5doF_Uc",
+    "runtime": "102 min",
+    "director": "Chris Buck, Jennifer Lee",
+    "cast": ["Kristen Bell", "Idina Menzel", "Jonathan Groff", "Josh Gad"],
+    "language": "English, Norwegian",
+    "streaming": ["Disney+"]
   },
   {
     "id": 30,
@@ -297,7 +442,12 @@
     "rating": 4.7,
     "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
     "description": "A continuation of the dream-sharing story with new stakes and deeper mysteries to unravel.",
-    "trailerUrl": "https://www.youtube.com/embed/YoHD9XEInc0"
+    "trailerUrl": "https://www.youtube.com/embed/YoHD9XEInc0",
+    "runtime": "155 min",
+    "director": "Christopher Nolan",
+    "cast": ["Leonardo DiCaprio", "Tom Hardy", "Elliot Page", "Cillian Murphy"],
+    "language": "English, Mandarin",
+    "streaming": ["HBO Max"]
   },
   {
     "id": 31,
@@ -307,7 +457,12 @@
     "rating": 4.8,
     "poster": "https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_SX300.jpg",
     "description": "The story of American scientist J. Robert Oppenheimer and the Manhattan Project.",
-    "trailerUrl": "https://www.youtube.com/embed/uYPbbksJxIg"
+    "trailerUrl": "https://www.youtube.com/embed/uYPbbksJxIg",
+    "runtime": "180 min",
+    "director": "Christopher Nolan",
+    "cast": ["Cillian Murphy", "Emily Blunt", "Matt Damon", "Robert Downey Jr."],
+    "language": "English",
+    "streaming": ["Peacock", "Amazon Prime"]
   },
   {
     "id": 32,
@@ -317,7 +472,12 @@
     "rating": 4.6,
     "poster": "https://m.media-amazon.com/images/M/MV5BNjU3N2QxNzYtMjk1NC00MTc4LTk1NTQtMmUxNTljM2I0NDA5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
     "description": "Barbie and Ken navigate the real world in this vibrant, playful adventure.",
-    "trailerUrl": "https://www.youtube.com/embed/pBk4NYhWNMM"
+    "trailerUrl": "https://www.youtube.com/embed/pBk4NYhWNMM",
+    "runtime": "114 min",
+    "director": "Greta Gerwig",
+    "cast": ["Margot Robbie", "Ryan Gosling", "America Ferrera", "Kate McKinnon"],
+    "language": "English",
+    "streaming": ["HBO Max", "Amazon Prime"]
   },
   {
     "id": 33,
@@ -327,7 +487,12 @@
     "rating": 4.5,
     "poster": "https://m.media-amazon.com/images/M/MV5BMmJlZGRhZjEtNDUxNi00YjhkLTkwOWYtOTc5MTAyNjQxMjI0XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg",
     "description": "An investigation into murders targeting the Osage Nation in 1920s Oklahoma.",
-    "trailerUrl": "https://www.youtube.com/embed/EG0si5bSd3g"
+    "trailerUrl": "https://www.youtube.com/embed/EG0si5bSd3g",
+    "runtime": "206 min",
+    "director": "Martin Scorsese",
+    "cast": ["Leonardo DiCaprio", "Lily Gladstone", "Robert De Niro", "Jesse Plemons"],
+    "language": "English, Osage",
+    "streaming": ["Apple TV+"]
   },
   {
     "id": 34,
@@ -337,7 +502,12 @@
     "rating": 4.5,
     "poster": "https://m.media-amazon.com/images/M/MV5BM2YzOTM5ZGUtZTRiYy00Yjk5LWI0NmQtNWI2ZjQzMmRlYmU0XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg",
     "description": "Two titans clash in an epic battle that could change the world forever.",
-    "trailerUrl": "https://www.youtube.com/embed/lV1OOlGwExM"
+    "trailerUrl": "https://www.youtube.com/embed/lV1OOlGwExM",
+    "runtime": "115 min",
+    "director": "Adam Wingard",
+    "cast": ["Rebecca Hall", "Brian Tyree Henry", "Dan Stevens", "Kaylee Hottle"],
+    "language": "English",
+    "streaming": ["HBO Max", "Amazon Prime"]
   },
   {
     "id": 35,
@@ -347,7 +517,12 @@
     "rating": 4.7,
     "poster": "https://m.media-amazon.com/images/M/MV5BN2QyZGU4ZDctOWMzMy00NTc5LThlOGQtODhmNDI1NmY5YzAwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg",
     "description": "Paul Atreides continues his journey on Arrakis as revolution brews.",
-    "trailerUrl": "https://www.youtube.com/embed/Way9Dexny3w"
+    "trailerUrl": "https://www.youtube.com/embed/Way9Dexny3w",
+    "runtime": "166 min",
+    "director": "Denis Villeneuve",
+    "cast": ["Timothée Chalamet", "Zendaya", "Austin Butler", "Florence Pugh"],
+    "language": "English",
+    "streaming": ["HBO Max"]
   },
   {
     "id": 36,
@@ -357,7 +532,12 @@
     "rating": 4.8,
     "poster": "https://m.media-amazon.com/images/M/MV5BYTc1MDQ3NjAtOWEzMi00YzE1LWI2OWUtNjQ0OWJkMzI3MDhmXkEyXkFqcGdeQXVyMTM1NjM2ODg1._V1_SX300.jpg",
     "description": "Emotions return for a new adventure through the mind of a teenager.",
-    "trailerUrl": "https://www.youtube.com/embed/LEjhY15eCx0"
+    "trailerUrl": "https://www.youtube.com/embed/LEjhY15eCx0",
+    "runtime": "96 min",
+    "director": "Kelsey Mann",
+    "cast": ["Amy Poehler", "Maya Hawke", "Phyllis Smith", "Lewis Black"],
+    "language": "English",
+    "streaming": ["Disney+"]
   },
   {
     "id": 37,
@@ -366,8 +546,13 @@
     "genre": "Action",
     "rating": 4.6,
     "poster": "https://m.media-amazon.com/images/M/MV5BNzRiMjg0MzUtNTQ1Mi00Y2Q5LWEwM2MtMzUwZDU5NmVjN2NkXkEyXkFqcGdeQXVyMTI2MzY1MjM1._V1_SX300.jpg",
-    "description": "The merc with a mouth teams up with the world's greatest superhero for mayhem.",
-    "trailerUrl": "https://www.youtube.com/embed/73_1biulkYk"
+    "description": "Wade Wilson and Logan team up in this irreverent, action-packed Marvel adventure.",
+    "trailerUrl": "https://www.youtube.com/embed/73_1biulkYk",
+    "runtime": "128 min",
+    "director": "Shawn Levy",
+    "cast": ["Ryan Reynolds", "Hugh Jackman", "Emma Corrin", "Matthew Macfadyen"],
+    "language": "English",
+    "streaming": ["Disney+"]
   },
   {
     "id": 38,
@@ -377,7 +562,12 @@
     "rating": 4.6,
     "poster": "https://m.media-amazon.com/images/M/MV5BYzhjM2M5NWItZTVhMy00MGI1LWJlMDItZTdiYTk4ZmE3MGE5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
     "description": "A prequel exploring the first day of the invasion that silenced the world.",
-    "trailerUrl": "https://www.youtube.com/embed/YPY7J-flzE8"
+    "trailerUrl": "https://www.youtube.com/embed/YPY7J-flzE8",
+    "runtime": "99 min",
+    "director": "Michael Sarnoski",
+    "cast": ["Lupita Nyong'o", "Joseph Quinn", "Alex Wolff", "Djimon Hounsou"],
+    "language": "English",
+    "streaming": ["Paramount+", "Amazon Prime"]
   },
   {
     "id": 39,
@@ -387,7 +577,12 @@
     "rating": 4.5,
     "poster": "https://m.media-amazon.com/images/M/MV5BMDU0NjcwOGQtNjNjOS00NzQ3LWIwM2YtYWVmODZjMzQzN2ExXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_SX300.jpg",
     "description": "A salvage crew encounters deadly creatures on an abandoned spacecraft.",
-    "trailerUrl": "https://www.youtube.com/embed/x0XDEhP4MQs"
+    "trailerUrl": "https://www.youtube.com/embed/x0XDEhP4MQs",
+    "runtime": "119 min",
+    "director": "Fede Álvarez",
+    "cast": ["Cailee Spaeny", "David Jonsson", "Archie Renaux", "Isabela Merced"],
+    "language": "English",
+    "streaming": ["Hulu", "Disney+"]
   },
   {
     "id": 40,
@@ -397,6 +592,11 @@
     "rating": 4.4,
     "poster": "https://m.media-amazon.com/images/M/MV5BY2JhMWVlYjUtZWFjYy00YmJjLTkzNzgtNzY4ZjM3Y2E5ZTc4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg",
     "description": "Arthur Fleck meets another troubled soul in this dark musical drama.",
-    "trailerUrl": "https://www.youtube.com/embed/xy8aJw1vYHo"
+    "trailerUrl": "https://www.youtube.com/embed/xy8aJw1vYHo",
+    "runtime": "138 min",
+    "director": "Todd Phillips",
+    "cast": ["Joaquin Phoenix", "Lady Gaga", "Brendan Gleeson", "Catherine Keener"],
+    "language": "English",
+    "streaming": ["HBO Max", "Amazon Prime"]
   }
 ]

@@ -3,12 +3,13 @@
 // Member 2: Mary Jain Joshy - News Content & UI
 // ---------------------------------------------------------
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Reviews() {
   const [sortBy, setSortBy] = useState("date");
   const [selectedArticle, setSelectedArticle] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   const newsArticles = [
     {
@@ -127,6 +128,11 @@ function Reviews() {
     }
   });
 
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <motion.div
       className="reviews-page news-page"
@@ -164,6 +170,9 @@ function Reviews() {
             <img 
               src="https://images.unsplash.com/photo-1594908900066-3f47337549d8?w=600&h=400&fit=crop" 
               alt="Cinema News"
+              loading="lazy"
+              width="600"
+              height="400"
             />
             <div className="hero-image-overlay">
               <span className="hero-badge">
@@ -204,53 +213,68 @@ function Reviews() {
 
       {/* News Articles Grid */}
       <div className="news-grid">
-        {sortedArticles.map((article, index) => (
-          <motion.div
-            key={article.id}
-            className="news-card"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.08 }}
-          >
-            <div className="news-image-container">
-              <img 
-                src={article.image} 
-                alt={article.title}
-                className="news-image"
-              />
-              <span className="news-category-badge">{article.category}</span>
-            </div>
-            
-            <div className="news-content">
-              <h3 className="news-title">{article.title}</h3>
-              
-              <div className="news-meta">
-                <span className="news-author">
-                  <i className="fas fa-user-circle me-2"></i>
-                  {article.author}
-                </span>
-                <span className="news-date">
-                  <i className="fas fa-calendar me-2"></i>
-                  {new Date(article.date).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'short',
-                    day: 'numeric'
-                  })}
-                </span>
+        {isLoading
+          ? Array.from({ length: 6 }).map((_, idx) => (
+              <div key={idx} className="news-card skeleton-card">
+                <div className="news-image-container skeleton-box"></div>
+                <div className="news-content">
+                  <span className="skeleton-line short"></span>
+                  <span className="skeleton-line"></span>
+                  <span className="skeleton-line"></span>
+                  <span className="skeleton-line thin"></span>
+                </div>
               </div>
-              
-              <p className="news-excerpt">{article.excerpt}</p>
-              
-              <button 
-                className="btn-read-more"
-                onClick={() => setSelectedArticle(article)}
+            ))
+          : sortedArticles.map((article, index) => (
+              <motion.div
+                key={article.id}
+                className="news-card"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.08 }}
               >
-                Read Full Article
-                <i className="fas fa-arrow-right ms-2"></i>
-              </button>
-            </div>
-          </motion.div>
-        ))}
+                <div className="news-image-container">
+                  <img 
+                    src={`${article.image}&auto=format&fit=crop&q=70`} 
+                    alt={article.title}
+                    className="news-image"
+                    loading="lazy"
+                    width="400"
+                    height="250"
+                  />
+                  <span className="news-category-badge">{article.category}</span>
+                </div>
+                
+                <div className="news-content">
+                  <h3 className="news-title">{article.title}</h3>
+                  
+                  <div className="news-meta">
+                    <span className="news-author">
+                      <i className="fas fa-user-circle me-2"></i>
+                      {article.author}
+                    </span>
+                    <span className="news-date">
+                      <i className="fas fa-calendar me-2"></i>
+                      {new Date(article.date).toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric'
+                      })}
+                    </span>
+                  </div>
+                  
+                  <p className="news-excerpt">{article.excerpt}</p>
+                  
+                  <button 
+                    className="btn-read-more"
+                    onClick={() => setSelectedArticle(article)}
+                  >
+                    Read Full Article
+                    <i className="fas fa-arrow-right ms-2"></i>
+                  </button>
+                </div>
+              </motion.div>
+            ))}
       </div>
 
       {/* Article Modal */}

@@ -3,7 +3,7 @@
 // Member 3: Dinesh Babu Illamaran - Movie Content & Features
 // ---------------------------------------------------------
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import MovieCard from "../components/MovieCard";
 import moviesData from "../data/movies.json";
@@ -11,6 +11,7 @@ import moviesData from "../data/movies.json";
 function Movies() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedGenre, setSelectedGenre] = useState("All");
+  const [isLoading, setIsLoading] = useState(true);
 
   // Get unique genres from movies data
   const genres = ["All", ...new Set(moviesData.map((movie) => movie.genre))];
@@ -24,6 +25,11 @@ function Movies() {
       selectedGenre === "All" || movie.genre === selectedGenre;
     return matchesSearch && matchesGenre;
   });
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 500);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <motion.div
@@ -66,8 +72,11 @@ function Movies() {
             transition={{ delay: 0.35, duration: 0.6 }}
           >
             <img
-              src="https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?w=700&h=450&fit=crop"
+              src="https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?w=700&h=450&fit=crop&auto=format&q=70"
               alt="Latest movie highlight"
+              loading="lazy"
+              width="700"
+              height="450"
             />
             <div className="hero-image-overlay">
               <span className="hero-badge">
@@ -131,9 +140,24 @@ function Movies() {
 
       {/* Movies Grid */}
       <div className="row">
-        {filteredMovies.length > 0 ? (
+        {isLoading ? (
+          Array.from({ length: 8 }).map((_, idx) => (
+            <div key={idx} className="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+              <div className="card-dark movie-card skeleton-card">
+                <div className="poster-container skeleton-box"></div>
+                <div className="skeleton-lines">
+                  <span className="skeleton-line short"></span>
+                  <span className="skeleton-line"></span>
+                  <span className="skeleton-line thin"></span>
+                </div>
+              </div>
+            </div>
+          ))
+        ) : filteredMovies.length > 0 ? (
           filteredMovies.map((movie) => (
-            <MovieCard key={movie.id} movie={movie} />
+            <div key={movie.id} className="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+              <MovieCard movie={movie} />
+            </div>
           ))
         ) : (
           <div className="col-12 text-center py-5">

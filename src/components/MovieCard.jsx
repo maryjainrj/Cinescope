@@ -10,7 +10,6 @@ import { motion } from "framer-motion";
 function MovieCard({ movie }) {
   return (
     <motion.div
-      className="col-lg-2 col-md-3 col-sm-4 col-6 mb-4"
       whileHover={{ scale: 1.05 }}
       transition={{ duration: 0.3 }}
     >
@@ -21,6 +20,9 @@ function MovieCard({ movie }) {
               src={movie.poster}
               alt={`${movie.title} poster`}
               className="movie-poster"
+              loading="lazy"
+              width="300"
+              height="450"
             />
             <div className="movie-info-overlay">
               <h4 className="movie-title">{movie.title}</h4>
