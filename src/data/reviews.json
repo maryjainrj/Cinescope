@@ -1,0 +1,202 @@
+[
+  {
+    "id": 101,
+    "movie": "Inception",
+    "rating": 5,
+    "user": "Alex Thompson",
+    "comment": "Mind-blowing visuals and concept! Christopher Nolan at his finest. The way he plays with time and reality creates a cinematic experience unlike anything else. Every frame is meticulously crafted, and the dream sequences are both beautiful and haunting. Hans Zimmer's score perfectly complements the narrative's intensity.",
+    "date": "2024-01-10"
+  },
+  {
+    "id": 102,
+    "movie": "Interstellar",
+    "rating": 4,
+    "user": "Sam Rodriguez",
+    "comment": "Beautiful and emotional journey through space. The soundtrack is incredible! The film masterfully combines hard science fiction with deeply human emotions. Matthew McConaughey delivers a career-defining performance. The visuals of the black hole and time dilation sequences are scientifically accurate and visually stunning.",
+    "date": "2024-01-05"
+  },
+  {
+    "id": 103,
+    "movie": "The Dark Knight",
+    "rating": 5,
+    "user": "Mia Chen",
+    "comment": "Best superhero movie ever made. Heath Ledger's performance is unforgettable. He completely embodies the chaos and anarchy of the Joker. The film transcends the superhero genre to become a crime thriller that explores themes of morality, justice, and the thin line between hero and villain. Christian Bale's Batman is equally compelling.",
+    "date": "2024-01-01"
+  },
+  {
+    "id": 104,
+    "movie": "Pulp Fiction",
+    "rating": 5,
+    "user": "Jordan Mitchell",
+    "comment": "Tarantino's masterpiece! Non-linear storytelling done perfectly. The dialogue is sharp, witty, and endlessly quotable. Every character feels alive and memorable. The film's structure keeps you engaged throughout, and the eclectic soundtrack enhances every scene. Samuel L. Jackson and John Travolta have incredible chemistry.",
+    "date": "2024-01-15"
+  },
+  {
+    "id": 105,
+    "movie": "The Matrix",
+    "rating": 4,
+    "user": "Taylor Brooks",
+    "comment": "Revolutionary action sequences and philosophical depth. A true classic. The bullet-time effects were groundbreaking for their time and still look amazing. The film raises profound questions about reality, consciousness, and free will. Keanu Reeves perfectly captures Neo's transformation from ordinary to extraordinary.",
+    "date": "2024-01-12"
+  },
+  {
+    "id": 106,
+    "movie": "Forrest Gump",
+    "rating": 5,
+    "user": "Casey Williams",
+    "comment": "Heartwarming and inspirational. Tom Hanks delivers an Oscar-worthy performance. The film takes us through decades of American history through the eyes of a simple man with an extraordinary heart. The emotional depth is incredible, and the relationship between Forrest and Jenny is both beautiful and heartbreaking. A true feel-good masterpiece.",
+    "date": "2024-01-08"
+  },
+  {
+    "id": 107,
+    "movie": "The Shawshank Redemption",
+    "rating": 5,
+    "user": "Morgan Foster",
+    "comment": "A timeless tale of hope and friendship. Simply perfect in every way. Tim Robbins and Morgan Freeman deliver powerhouse performances that anchor this emotional journey. The film's message about never losing hope, even in the darkest circumstances, resonates deeply. The cinematography beautifully contrasts the prison's bleakness with moments of profound beauty.",
+    "date": "2024-01-20"
+  },
+  {
+    "id": 108,
+    "movie": "Avengers: Endgame",
+    "rating": 4,
+    "user": "Chris Parker",
+    "comment": "Epic conclusion to the Infinity Saga. Satisfying ending for all Marvel fans. The film delivers on a decade of build-up with stunning action sequences and emotional character moments. The final battle is spectacular, bringing together heroes from across the MCU. Robert Downey Jr.'s performance brings genuine depth to Tony Stark's arc.",
+    "date": "2024-01-18"
+  },
+  {
+    "id": 109,
+    "movie": "Parasite",
+    "rating": 5,
+    "user": "Jamie Lee",
+    "comment": "Brilliant social commentary with unexpected twists. Deserved every award it won. Bong Joon-ho crafts a masterful thriller that dissects class inequality with dark humor and shocking violence. The film's tonal shifts are handled expertly, keeping viewers on edge. The production design brilliantly uses architecture to reinforce the social hierarchy themes.",
+    "date": "2024-01-14"
+  },
+  {
+    "id": 110,
+    "movie": "Gladiator",
+    "rating": 4,
+    "user": "Riley Anderson",
+    "comment": "Russell Crowe is phenomenal. Epic storytelling with amazing action sequences. The film brings ancient Rome to life with stunning authenticity. The arena battles are visceral and intense. Hans Zimmer's score is both triumphant and melancholic. Joaquin Phoenix creates a memorable villain in Commodus. A perfect blend of spectacle and substance.",
+    "date": "2024-01-11"
+  },
+  {
+    "id": 111,
+    "movie": "The Silence of the Lambs",
+    "rating": 5,
+    "user": "Drew Martinez",
+    "comment": "Chilling and suspenseful throughout. Anthony Hopkins is terrifyingly brilliant. Despite limited screen time, Hopkins creates one of cinema's most iconic villains. Jodie Foster matches him perfectly as Clarice Starling. The psychological cat-and-mouse game between them is riveting. Jonathan Demme's direction creates an atmosphere of constant unease.",
+    "date": "2024-01-09"
+  },
+  {
+    "id": 112,
+    "movie": "Spider-Man: Into the Spider-Verse",
+    "rating": 5,
+    "user": "Avery Johnson",
+    "comment": "Groundbreaking animation style. A fresh and exciting take on Spider-Man. The film feels like a comic book come to life with its unique visual style. Miles Morales is a relatable and compelling protagonist. The multiverse concept allows for creative storytelling and introduces fantastic alternate Spider-People. The soundtrack perfectly captures the film's energy.",
+    "date": "2024-01-17"
+  },
+  {
+    "id": 113,
+    "movie": "Inception",
+    "rating": 4,
+    "user": "Quinn Davis",
+    "comment": "Complex but rewarding. You'll need to watch it multiple times to catch everything. The layers of dreams within dreams create a puzzle that's intellectually stimulating. The ensemble cast, including Tom Hardy and Ellen Page, all deliver strong performances. The practical effects blend seamlessly with CGI. The ambiguous ending sparks endless debate.",
+    "date": "2024-01-06"
+  },
+  {
+    "id": 114,
+    "movie": "The Matrix",
+    "rating": 5,
+    "user": "Skylar White",
+    "comment": "Changed the action genre forever. Still holds up amazingly well today. The Wachowskis created a visually stunning world that questions the nature of reality. The fight choreography influenced action cinema for years. The cyberpunk aesthetic is timeless. Laurence Fishburne's Morpheus is the perfect mentor figure. A landmark achievement in sci-fi filmmaking.",
+    "date": "2024-01-13"
+  },
+  {
+    "id": 115,
+    "movie": "Parasite",
+    "rating": 4,
+    "user": "Dakota Brown",
+    "comment": "Unpredictable and thought-provoking. The cinematography is stunning. The film keeps you guessing with its tonal shifts and plot twists. The cast is uniformly excellent, bringing depth to each character. The symbolism throughout the film rewards multiple viewings. It's both entertaining and deeply meaningful, a rare combination in modern cinema.",
+    "date": "2024-01-16"
+  },
+  {
+    "id": 116,
+    "movie": "The Godfather",
+    "rating": 5,
+    "user": "Elena Russo",
+    "comment": "An absolute masterpiece of cinema. Coppola's direction is flawless, and the performances from Brando and Pacino are legendary. The transformation of Michael Corleone from reluctant outsider to ruthless don is one of the greatest character arcs in film history. The cinematography by Gordon Willis creates an atmosphere of dark elegance.",
+    "date": "2024-01-22"
+  },
+  {
+    "id": 117,
+    "movie": "Dune",
+    "rating": 4,
+    "user": "Marcus Stone",
+    "comment": "Denis Villeneuve brings Frank Herbert's epic to life with breathtaking visuals. The scale is enormous yet intimate. Timothée Chalamet captures Paul's internal struggle perfectly. Hans Zimmer's experimental score is haunting and otherworldly. The world-building is meticulous, making Arrakis feel real and dangerous.",
+    "date": "2024-01-24"
+  },
+  {
+    "id": 118,
+    "movie": "The Lion King",
+    "rating": 5,
+    "user": "Nina Patel",
+    "comment": "Disney animation at its absolute peak. The Circle of Life opening gives me goosebumps every time. The voice acting is superb, especially James Earl Jones as Mufasa. The songs by Elton John and Tim Rice are timeless classics. A perfect film for all ages that teaches powerful lessons about responsibility and identity.",
+    "date": "2024-01-25"
+  },
+  {
+    "id": 119,
+    "movie": "Oppenheimer",
+    "rating": 5,
+    "user": "Victor Hughes",
+    "comment": "Christopher Nolan's most mature and ambitious work. Cillian Murphy gives a career-best performance as the conflicted physicist. The non-linear narrative keeps you engaged for all three hours. The sound design during the Trinity test is earth-shattering. A profound meditation on genius, morality, and the cost of ambition.",
+    "date": "2024-01-26"
+  },
+  {
+    "id": 120,
+    "movie": "Back to the Future",
+    "rating": 5,
+    "user": "Olivia Carter",
+    "comment": "Perfect entertainment from start to finish. Michael J. Fox and Christopher Lloyd have incredible chemistry. The time-travel logic is cleverly constructed, and the script is tight with no wasted scenes. Alan Silvestri's score is iconic. A film that's both hilarious and thrilling, suitable for the whole family.",
+    "date": "2024-01-27"
+  },
+  {
+    "id": 121,
+    "movie": "Jurassic Park",
+    "rating": 5,
+    "user": "Liam O'Connor",
+    "comment": "Spielberg creates movie magic with groundbreaking effects that still hold up. The T-Rex attack scene is one of the most suspenseful sequences ever filmed. Jeff Goldblum steals every scene he's in. John Williams' theme is instantly recognizable. The blend of practical animatronics and CGI was revolutionary.",
+    "date": "2024-01-28"
+  },
+  {
+    "id": 122,
+    "movie": "Inside Out 2",
+    "rating": 4,
+    "user": "Sophia Garcia",
+    "comment": "Pixar continues to excel at emotional storytelling. The introduction of new emotions like Anxiety is brilliant and relatable. The animation is gorgeous, bringing abstract concepts to life beautifully. A film that helps both kids and adults understand mental health in an accessible way.",
+    "date": "2024-01-29"
+  },
+  {
+    "id": 123,
+    "movie": "Titanic",
+    "rating": 5,
+    "user": "Isabella Moore",
+    "comment": "A sweeping romantic epic that never loses its power. Leonardo DiCaprio and Kate Winslet create one of cinema's most memorable love stories. The sinking sequence is both technically impressive and emotionally devastating. James Cameron's attention to historical detail is remarkable. Celine Dion's 'My Heart Will Go On' is forever iconic.",
+    "date": "2024-01-30"
+  },
+  {
+    "id": 124,
+    "movie": "Deadpool & Wolverine",
+    "rating": 4,
+    "user": "Ryan Collins",
+    "comment": "The perfect pairing of these two characters. Ryan Reynolds and Hugh Jackman have fantastic chemistry and comedic timing. The meta-humor is sharp and the action is intense. A love letter to both characters and the X-Men franchise. Marvel's R-rated approach pays off with stylish violence and adult humor.",
+    "date": "2024-02-01"
+  },
+  {
+    "id": 125,
+    "movie": "Avatar",
+    "rating": 4,
+    "user": "Emma Turner",
+    "comment": "James Cameron revolutionizes 3D cinema with stunning visuals of Pandora. The bioluminescent forests are breathtaking. While the story follows familiar beats, the world-building is exceptional. The motion-capture performances bring the Na'vi to life convincingly. A technical achievement that pushed cinema forward.",
+    "date": "2024-02-02"
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "title": "Inception",
+    "year": 2010,
+    "genre": "Sci-Fi",
+    "rating": 4.8,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
+    "description": "A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+    "trailerUrl": "https://www.youtube.com/embed/YoHD9XEInc0"
+  },
+  {
+    "id": 2,
+    "title": "Interstellar",
+    "year": 2014,
+    "genre": "Adventure",
+    "rating": 4.9,
+    "poster": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+    "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    "trailerUrl": "https://www.youtube.com/embed/zSWdZVtXT7E"
+  },
+  {
+    "id": 3,
+    "title": "The Dark Knight",
+    "year": 2008,
+    "genre": "Action",
+    "rating": 5.0,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
+    "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological tests.",
+    "trailerUrl": "https://www.youtube.com/embed/EXeTwQWrcwY"
+  },
+  {
+    "id": 4,
+    "title": "Pulp Fiction",
+    "year": 1994,
+    "genre": "Drama",
+    "rating": 4.7,
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    "description": "The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption.",
+    "trailerUrl": "https://www.youtube.com/embed/s7EdQ4FqbhY"
+  },
+  {
+    "id": 5,
+    "title": "The Matrix",
+    "year": 1999,
+    "genre": "Sci-Fi",
+    "rating": 4.6,
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+    "trailerUrl": "https://www.youtube.com/embed/vKQi3bBA1y8"
+  },
+  {
+    "id": 6,
+    "title": "Forrest Gump",
+    "year": 1994,
+    "genre": "Drama",
+    "rating": 4.8,
+    "poster": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    "description": "The presidencies of Kennedy and Johnson unfold through the perspective of an Alabama man with an IQ of 75.",
+    "trailerUrl": "https://www.youtube.com/embed/bLvqoHBptjg"
+  },
+  {
+    "id": 7,
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "genre": "Drama",
+    "rating": 4.9,
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg",
+    "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "trailerUrl": "https://www.youtube.com/embed/NmzuHjWmXOc"
+  },
+  {
+    "id": 8,
+    "title": "Avengers: Endgame",
+    "year": 2019,
+    "genre": "Action",
+    "rating": 4.5,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
+    "description": "After the devastating events of Infinity War, the Avengers assemble once more to reverse Thanos' actions and restore balance to the universe.",
+    "trailerUrl": "https://www.youtube.com/embed/TcMBFSGVi1c"
+  },
+  {
+    "id": 9,
+    "title": "Parasite",
+    "year": 2019,
+    "genre": "Thriller",
+    "rating": 4.7,
+    "poster": "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg",
+    "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+    "trailerUrl": "https://www.youtube.com/embed/5xH0HfJHsaY"
+  },
+  {
+    "id": 10,
+    "title": "Gladiator",
+    "year": 2000,
+    "genre": "Adventure",
+    "rating": 4.6,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "description": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
+    "trailerUrl": "https://www.youtube.com/embed/owK1qxDselE"
+  },
+  {
+    "id": 11,
+    "title": "The Silence of the Lambs",
+    "year": 1991,
+    "genre": "Thriller",
+    "rating": 4.8,
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "description": "A young FBI cadet must receive the help of an incarcerated cannibal killer to catch another serial killer who skins his victims.",
+    "trailerUrl": "https://www.youtube.com/embed/W6Mm8Sbe__o"
+  },
+  {
+    "id": 12,
+    "title": "Spider-Man: Into the Spider-Verse",
+    "year": 2018,
+    "genre": "Animation",
+    "rating": 4.7,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjMwNDkxMTgzOF5BMl5BanBnXkFtZTgwNTkwNTQ3NjM@._V1_SX300.jpg",
+    "description": "Teen Miles Morales becomes Spider-Man and must help others with the same powers from different dimensions to stop a threat to all realities.",
+    "trailerUrl": "https://www.youtube.com/embed/tg52up16eq0"
+  },
+  {
+    "id": 13,
+    "title": "The Godfather",
+    "year": 1972,
+    "genre": "Drama",
+    "rating": 4.9,
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant youngest son.",
+    "trailerUrl": "https://www.youtube.com/embed/UaVTIH8mujA"
+  },
+  {
+    "id": 14,
+    "title": "Titanic",
+    "year": 1997,
+    "genre": "Drama",
+    "rating": 4.5,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDdmZGU3NDQtY2E5My00ZTliLWIzOTUtMTY4ZGI1YjdiNjk3XkEyXkFqcGdeQXVyNTA4NzY1MzY@._V1_SX300.jpg",
+    "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.",
+    "trailerUrl": "https://www.youtube.com/embed/kVrqfYjkTdQ"
+  },
+  {
+    "id": 15,
+    "title": "The Lion King",
+    "year": 1994,
+    "genre": "Animation",
+    "rating": 4.6,
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_SX300.jpg",
+    "description": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
+    "trailerUrl": "https://www.youtube.com/embed/lFzVJEksoDY"
+  },
+  {
+    "id": 16,
+    "title": "Jurassic Park",
+    "year": 1993,
+    "genre": "Adventure",
+    "rating": 4.7,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjM2MDgxMDg0Nl5BMl5BanBnXkFtZTgwNTM2OTM5NDE@._V1_SX300.jpg",
+    "description": "A pragmatic paleontologist touring an almost complete theme park is tasked with protecting a couple of kids when a power breakdown allows the park's cloned dinosaurs to run loose.",
+    "trailerUrl": "https://www.youtube.com/embed/lc0UehYemQA"
+  },
+  {
+    "id": 17,
+    "title": "Back to the Future",
+    "year": 1985,
+    "genre": "Sci-Fi",
+    "rating": 4.8,
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    "description": "A teenager is accidentally sent 30 years into the past in a time-traveling DeLorean invented by his friend, a mad scientist.",
+    "trailerUrl": "https://www.youtube.com/embed/qvsgGtivCgs"
+  },
+  {
+    "id": 18,
+    "title": "Jaws",
+    "year": 1975,
+    "genre": "Thriller",
+    "rating": 4.5,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+    "description": "When a killer shark unleashes chaos on a beach community, the police chief has only one choice - to hunt it down.",
+    "trailerUrl": "https://www.youtube.com/embed/U1fu_sA7XhE"
+  },
+  {
+    "id": 19,
+    "title": "E.T. the Extra-Terrestrial",
+    "year": 1982,
+    "genre": "Adventure",
+    "rating": 4.6,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTQ2ODFlMDAtNzdhOC00ZDYzLWE3YTMtNDU4ZGFmZmJmYTczXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    "description": "A troubled child summons the courage to help a friendly alien escape Earth and return to his home world.",
+    "trailerUrl": "https://www.youtube.com/embed/qYAETtIIClk"
+  },
+  {
+    "id": 20,
+    "title": "The Sixth Sense",
+    "year": 1999,
+    "genre": "Thriller",
+    "rating": 4.7,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMWM4NTFhYjctNzUyNi00NGMwLTk3NTYtMDIyNTZmMzRlYmQyXkEyXkFqcGdeQXVyMTAwMzUyOTc@._V1_SX300.jpg",
+    "description": "A frightened, withdrawn Philadelphia boy who communicates with ghosts seeks help from a dispassionate child psychologist.",
+    "trailerUrl": "https://www.youtube.com/embed/3-ZP95NF_Wk"
+  },
+  {
+    "id": 21,
+    "title": "The Avengers",
+    "year": 2012,
+    "genre": "Action",
+    "rating": 4.4,
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+    "description": "Earth's mightiest heroes must come together and learn to fight as a team to save the world from an alien attack.",
+    "trailerUrl": "https://www.youtube.com/embed/eOrNdBpGMv8"
+  },
+  {
+    "id": 22,
+    "title": "Dune",
+    "year": 2021,
+    "genre": "Sci-Fi",
+    "rating": 4.6,
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2FjNmEyNWMtYzM0ZS00NjIyLTg5YzYtYThlMGVjNzE1OGViXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+    "description": "Paul Atreides, a brilliant young man, must travel to the dangerous planet Arrakis to ensure the future of his family and people.",
+    "trailerUrl": "https://www.youtube.com/embed/8g18jFHCLXk"
+  },
+  {
+    "id": 23,
+    "title": "The Dark Knight Rises",
+    "year": 2012,
+    "genre": "Action",
+    "rating": 4.6,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_SX300.jpg",
+    "description": "Eight years after taking the fall for the crimes of Harvey Dent, Batman braces himself for onslaught from an imposing terrorist called Bane.",
+    "trailerUrl": "https://www.youtube.com/embed/g8evyE9TuYk"
+  },
+  {
+    "id": 24,
+    "title": "Inception: Alternative Cut",
+    "year": 2010,
+    "genre": "Sci-Fi",
+    "rating": 4.7,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
+    "description": "An extended exploration of dreams within dreams with new footage and alternate endings.",
+    "trailerUrl": "https://www.youtube.com/embed/YoHD9XEInc0"
+  },
+  {
+    "id": 25,
+    "title": "Avatar",
+    "year": 2009,
+    "genre": "Sci-Fi",
+    "rating": 4.5,
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDA0OGQxNTItMDZkMC00N2UyLTg3MzMtYTJmNjg3Nzk5MzRiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
+    "description": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+    "trailerUrl": "https://www.youtube.com/embed/5PSNL1qE6VY"
+  },
+  {
+    "id": 26,
+    "title": "The Conjuring",
+    "year": 2013,
+    "genre": "Thriller",
+    "rating": 4.6,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_SX300.jpg",
+    "description": "Paranormal investigators work to help a family terrorized by a dark presence in their farmhouse.",
+    "trailerUrl": "https://www.youtube.com/embed/k10ETZ41q5o"
+  },
+  {
+    "id": 27,
+    "title": "Fury",
+    "year": 2014,
+    "genre": "Action",
+    "rating": 4.5,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjA4MDU0NTUyN15BMl5BanBnXkFtZTgwMzQxMzY1MjE@._V1_SX300.jpg",
+    "description": "A group of American soldiers fight their way through Nazi-occupied Germany.",
+    "trailerUrl": "https://www.youtube.com/embed/q94n3eWOWXM"
+  },
+  {
+    "id": 28,
+    "title": "The Great Gatsby",
+    "year": 2013,
+    "genre": "Drama",
+    "rating": 4.4,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTkxNTk1ODcxNl5BMl5BanBnXkFtZTcwMDI1OTMzOQ@@._V1_SX300.jpg",
+    "description": "A poor man enters high society to impress the love of his life with newfound wealth.",
+    "trailerUrl": "https://www.youtube.com/embed/rARN6agiW7o"
+  },
+  {
+    "id": 29,
+    "title": "Frozen",
+    "year": 2013,
+    "genre": "Animation",
+    "rating": 4.7,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTQ1MjQwMTE5OF5BMl5BanBnXkFtZTgwNjk3MTcyMDE@._V1_SX300.jpg",
+    "description": "Two sisters must work together to end eternal winter and save their kingdom.",
+    "trailerUrl": "https://www.youtube.com/embed/TbQm5doF_Uc"
+  },
+  {
+    "id": 30,
+    "title": "Inception 2",
+    "year": 2024,
+    "genre": "Sci-Fi",
+    "rating": 4.7,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
+    "description": "A continuation of the dream-sharing story with new stakes and deeper mysteries to unravel.",
+    "trailerUrl": "https://www.youtube.com/embed/YoHD9XEInc0"
+  },
+  {
+    "id": 31,
+    "title": "Oppenheimer",
+    "year": 2023,
+    "genre": "Drama",
+    "rating": 4.8,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_SX300.jpg",
+    "description": "The story of American scientist J. Robert Oppenheimer and the Manhattan Project.",
+    "trailerUrl": "https://www.youtube.com/embed/uYPbbksJxIg"
+  },
+  {
+    "id": 32,
+    "title": "Barbie",
+    "year": 2023,
+    "genre": "Drama",
+    "rating": 4.6,
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjU3N2QxNzYtMjk1NC00MTc4LTk1NTQtMmUxNTljM2I0NDA5XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
+    "description": "Barbie and Ken navigate the real world in this vibrant, playful adventure.",
+    "trailerUrl": "https://www.youtube.com/embed/pBk4NYhWNMM"
+  },
+  {
+    "id": 33,
+    "title": "Killers of the Flower Moon",
+    "year": 2023,
+    "genre": "Thriller",
+    "rating": 4.5,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMmJlZGRhZjEtNDUxNi00YjhkLTkwOWYtOTc5MTAyNjQxMjI0XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg",
+    "description": "An investigation into murders targeting the Osage Nation in 1920s Oklahoma.",
+    "trailerUrl": "https://www.youtube.com/embed/EG0si5bSd3g"
+  },
+  {
+    "id": 34,
+    "title": "Godzilla x Kong",
+    "year": 2024,
+    "genre": "Action",
+    "rating": 4.5,
+    "poster": "https://m.media-amazon.com/images/M/MV5BM2YzOTM5ZGUtZTRiYy00Yjk5LWI0NmQtNWI2ZjQzMmRlYmU0XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg",
+    "description": "Two titans clash in an epic battle that could change the world forever.",
+    "trailerUrl": "https://www.youtube.com/embed/lV1OOlGwExM"
+  },
+  {
+    "id": 35,
+    "title": "Dune: Part Two",
+    "year": 2024,
+    "genre": "Sci-Fi",
+    "rating": 4.7,
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2QyZGU4ZDctOWMzMy00NTc5LThlOGQtODhmNDI1NmY5YzAwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg",
+    "description": "Paul Atreides continues his journey on Arrakis as revolution brews.",
+    "trailerUrl": "https://www.youtube.com/embed/Way9Dexny3w"
+  },
+  {
+    "id": 36,
+    "title": "Inside Out 2",
+    "year": 2024,
+    "genre": "Animation",
+    "rating": 4.8,
+    "poster": "https://m.media-amazon.com/images/M/MV5BYTc1MDQ3NjAtOWEzMi00YzE1LWI2OWUtNjQ0OWJkMzI3MDhmXkEyXkFqcGdeQXVyMTM1NjM2ODg1._V1_SX300.jpg",
+    "description": "Emotions return for a new adventure through the mind of a teenager.",
+    "trailerUrl": "https://www.youtube.com/embed/LEjhY15eCx0"
+  },
+  {
+    "id": 37,
+    "title": "Deadpool & Wolverine",
+    "year": 2024,
+    "genre": "Action",
+    "rating": 4.6,
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzRiMjg0MzUtNTQ1Mi00Y2Q5LWEwM2MtMzUwZDU5NmVjN2NkXkEyXkFqcGdeQXVyMTI2MzY1MjM1._V1_SX300.jpg",
+    "description": "The merc with a mouth teams up with the world's greatest superhero for mayhem.",
+    "trailerUrl": "https://www.youtube.com/embed/73_1biulkYk"
+  },
+  {
+    "id": 38,
+    "title": "A Quiet Place: Day One",
+    "year": 2024,
+    "genre": "Thriller",
+    "rating": 4.6,
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzhjM2M5NWItZTVhMy00MGI1LWJlMDItZTdiYTk4ZmE3MGE5XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+    "description": "A prequel exploring the first day of the invasion that silenced the world.",
+    "trailerUrl": "https://www.youtube.com/embed/YPY7J-flzE8"
+  },
+  {
+    "id": 39,
+    "title": "Alien: Romulus",
+    "year": 2024,
+    "genre": "Sci-Fi",
+    "rating": 4.5,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMDU0NjcwOGQtNjNjOS00NzQ3LWIwM2YtYWVmODZjMzQzN2ExXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_SX300.jpg",
+    "description": "A salvage crew encounters deadly creatures on an abandoned spacecraft.",
+    "trailerUrl": "https://www.youtube.com/embed/x0XDEhP4MQs"
+  },
+  {
+    "id": 40,
+    "title": "Joker: Folie à Deux",
+    "year": 2024,
+    "genre": "Drama",
+    "rating": 4.4,
+    "poster": "https://m.media-amazon.com/images/M/MV5BY2JhMWVlYjUtZWFjYy00YmJjLTkzNzgtNzY4ZjM3Y2E5ZTc4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_SX300.jpg",
+    "description": "Arthur Fleck meets another troubled soul in this dark musical drama.",
+    "trailerUrl": "https://www.youtube.com/embed/xy8aJw1vYHo"
+  }
+]
