@@ -1,8 +1,3 @@
-// ---------------------------------------------------------
-// Contact.jsx - Contact Form with Validation
-// Member 2: Mary Jain Joshy - UI Design & Form Validation
-// ---------------------------------------------------------
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -90,49 +85,109 @@ function Contact() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
+      style={{ background: '#141414', minHeight: '100vh', paddingBottom: '60px' }}
     >
-      <h1 className="page-title">Contact Us</h1>
+      <motion.h1
+        className="page-title"
+        style={{
+          color: 'white',
+          fontSize: '3rem',
+          fontWeight: '700',
+          textAlign: 'center',
+          marginBottom: '40px'
+        }}
+        initial={{ y: -30, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+      >
+        <i className="fas fa-envelope me-3" style={{ color: '#e50914' }}></i>
+        Contact Us
+      </motion.h1>
 
       <div className="row justify-content-center">
         <div className="col-md-8">
           {/* Contact Info */}
-          <div className="card-dark p-4 mb-4">
-            <h3 className="mb-3">Get in Touch</h3>
-            <p className="text-grey mb-3">
+          <motion.div
+            className="card-dark p-4 mb-4"
+            style={{
+              background: 'rgba(255, 255, 255, 0.03)',
+              border: '1px solid rgba(255, 255, 255, 0.1)',
+              borderRadius: '12px'
+            }}
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            whileHover={{ scale: 1.01 }}
+          >
+            <h3 className="mb-3" style={{ color: 'white', fontSize: '22px', fontWeight: '700' }}>
+              <i className="fas fa-info-circle me-2" style={{ color: '#e50914' }}></i>
+              Get in Touch
+            </h3>
+            <p className="text-grey mb-3" style={{ color: '#ccc', lineHeight: '1.8' }}>
               Have questions, suggestions, or feedback? We'd love to hear from you!
               Fill out the form below and we'll get back to you as soon as possible.
             </p>
-            <div className="text-grey">
-              <p className="mb-2">
-                <strong>Email:</strong> contact@cinescope.com
+            <div style={{ color: '#ccc' }}>
+              <p className="mb-2" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <i className="fas fa-envelope" style={{ color: '#e50914', fontSize: '18px' }}></i>
+                <strong style={{ color: 'white' }}>Email:</strong> contact@cinescope.com
               </p>
-              <p className="mb-2">
-                <strong>Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM
+              <p className="mb-0" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <i className="fas fa-clock" style={{ color: '#e50914', fontSize: '18px' }}></i>
+                <strong style={{ color: 'white' }}>Hours:</strong> Monday - Friday, 9:00 AM - 5:00 PM
               </p>
             </div>
-          </div>
+          </motion.div>
 
           {/* Contact Form */}
-          <div className="card-dark p-4">
-            <h3 className="mb-4">Send us a Message</h3>
+          <motion.div
+            className="card-dark p-4"
+            style={{
+              background: 'linear-gradient(135deg, rgba(229, 9, 20, 0.05) 0%, rgba(0, 0, 0, 0.3) 100%)',
+              border: '1px solid rgba(229, 9, 20, 0.3)',
+              borderRadius: '12px'
+            }}
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <h3 className="mb-4" style={{ color: 'white', fontSize: '22px', fontWeight: '700' }}>
+              <i className="fas fa-paper-plane me-2" style={{ color: '#e50914' }}></i>
+              Send us a Message
+            </h3>
 
             {submitted ? (
               <motion.div
-                className="alert alert-success"
+                className="alert"
+                style={{
+                  background: 'linear-gradient(135deg, rgba(70, 211, 105, 0.2) 0%, rgba(70, 211, 105, 0.1) 100%)',
+                  border: '1px solid rgba(70, 211, 105, 0.5)',
+                  borderRadius: '8px',
+                  padding: '20px',
+                  color: 'white'
+                }}
                 initial={{ scale: 0.8, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 role="alert"
               >
-                <h4 className="alert-heading">Thank you!</h4>
-                <p className="mb-0">
+                <h4 style={{ color: '#46d369', marginBottom: '10px' }}>
+                  <i className="fas fa-check-circle me-2"></i>
+                  Thank you!
+                </h4>
+                <p className="mb-0" style={{ color: '#ccc' }}>
                   Your message has been sent successfully. We'll get back to you soon!
                 </p>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} noValidate>
                 {/* Name Field */}
-                <div className="mb-3">
-                  <label htmlFor="name" className="form-label">
+                <motion.div
+                  className="mb-3"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.4 }}
+                >
+                  <label htmlFor="name" className="form-label" style={{ color: '#ccc', fontWeight: '600' }}>
                     Name <span className="text-danger">*</span>
                   </label>
                   <input
@@ -148,17 +203,31 @@ function Contact() {
                     aria-required="true"
                     aria-invalid={errors.name ? "true" : "false"}
                     aria-describedby={errors.name ? "name-error" : undefined}
+                    style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: `1px solid ${errors.name ? '#dc3545' : 'rgba(255, 255, 255, 0.1)'}`,
+                      color: 'white',
+                      padding: '12px 16px',
+                      borderRadius: '8px',
+                      fontSize: '15px'
+                    }}
                   />
                   {errors.name && (
-                    <div id="name-error" className="invalid-feedback" role="alert">
+                    <div id="name-error" className="invalid-feedback" role="alert" style={{ color: '#dc3545' }}>
+                      <i className="fas fa-exclamation-circle me-1"></i>
                       {errors.name}
                     </div>
                   )}
-                </div>
+                </motion.div>
 
                 {/* Email Field */}
-                <div className="mb-3">
-                  <label htmlFor="email" className="form-label">
+                <motion.div
+                  className="mb-3"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.6, duration: 0.4 }}
+                >
+                  <label htmlFor="email" className="form-label" style={{ color: '#ccc', fontWeight: '600' }}>
                     Email <span className="text-danger">*</span>
                   </label>
                   <input
@@ -174,17 +243,31 @@ function Contact() {
                     aria-required="true"
                     aria-invalid={errors.email ? "true" : "false"}
                     aria-describedby={errors.email ? "email-error" : undefined}
+                    style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: `1px solid ${errors.email ? '#dc3545' : 'rgba(255, 255, 255, 0.1)'}`,
+                      color: 'white',
+                      padding: '12px 16px',
+                      borderRadius: '8px',
+                      fontSize: '15px'
+                    }}
                   />
                   {errors.email && (
-                    <div id="email-error" className="invalid-feedback" role="alert">
+                    <div id="email-error" className="invalid-feedback" role="alert" style={{ color: '#dc3545' }}>
+                      <i className="fas fa-exclamation-circle me-1"></i>
                       {errors.email}
                     </div>
                   )}
-                </div>
+                </motion.div>
 
                 {/* Message Field */}
-                <div className="mb-4">
-                  <label htmlFor="message" className="form-label">
+                <motion.div
+                  className="mb-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.7, duration: 0.4 }}
+                >
+                  <label htmlFor="message" className="form-label" style={{ color: '#ccc', fontWeight: '600' }}>
                     Message <span className="text-danger">*</span>
                   </label>
                   <textarea
@@ -200,21 +283,47 @@ function Contact() {
                     aria-required="true"
                     aria-invalid={errors.message ? "true" : "false"}
                     aria-describedby={errors.message ? "message-error" : undefined}
+                    style={{
+                      background: 'rgba(255, 255, 255, 0.05)',
+                      border: `1px solid ${errors.message ? '#dc3545' : 'rgba(255, 255, 255, 0.1)'}`,
+                      color: 'white',
+                      padding: '12px 16px',
+                      borderRadius: '8px',
+                      fontSize: '15px',
+                      resize: 'vertical'
+                    }}
                   ></textarea>
                   {errors.message && (
-                    <div id="message-error" className="invalid-feedback" role="alert">
+                    <div id="message-error" className="invalid-feedback" role="alert" style={{ color: '#dc3545' }}>
+                      <i className="fas fa-exclamation-circle me-1"></i>
                       {errors.message}
                     </div>
                   )}
-                </div>
+                </motion.div>
 
                 {/* Submit Button */}
-                <button type="submit" className="btn btn-danger btn-lg w-100">
+                <motion.button
+                  type="submit"
+                  className="btn btn-lg w-100"
+                  style={{
+                    background: 'linear-gradient(135deg, #e50914 0%, #b8070f 100%)',
+                    color: 'white',
+                    border: 'none',
+                    padding: '14px',
+                    borderRadius: '8px',
+                    fontSize: '16px',
+                    fontWeight: '700',
+                    transition: 'all 0.3s'
+                  }}
+                  whileHover={{ scale: 1.02, boxShadow: '0 4px 20px rgba(229, 9, 20, 0.4)' }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <i className="fas fa-paper-plane me-2"></i>
                   Send Message
-                </button>
+                </motion.button>
               </form>
             )}
-          </div>
+          </motion.div>
         </div>
       </div>
     </motion.div>

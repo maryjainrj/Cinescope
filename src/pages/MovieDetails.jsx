@@ -10,6 +10,7 @@ import StarRating from "../components/StarRating";
 import MovieCard from "../components/MovieCard";
 import moviesData from "../data/movies.json";
 import reviewsData from "../data/reviews.json";
+import "../styles/MovieDetails.css";
 
 function MovieDetails() {
   const { id } = useParams();
@@ -51,10 +52,12 @@ function MovieDetails() {
   // If movie not found, show error
   if (!movie) {
     return (
-      <div className="text-center py-5">
+      <div className="movie-not-found">
+        <i className="fas fa-film-slash"></i>
         <h2>Movie not found</h2>
-        <button className="btn btn-danger mt-3" onClick={() => navigate("/movies")}>
-          Back to Movies
+        <p>The movie you're looking for doesn't exist.</p>
+        <button className="btn-back-error" onClick={() => navigate("/movies")}>
+          <i className="fas fa-arrow-left"></i> Back to Movies
         </button>
       </div>
     );
@@ -65,215 +68,270 @@ function MovieDetails() {
   };
 
   return (
-    <motion.div
-      className="movie-details-page"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <button
-        className="btn btn-outline-light mb-4"
-        onClick={() => navigate("/movies")}
-        aria-label="Go back to movies list"
+    <div className="movie-details-page-enhanced">
+      {/* Hero Section with Backdrop */}
+      <div 
+        className="movie-hero-backdrop"
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(20, 20, 20, 0.3) 0%, rgba(20, 20, 20, 0.9) 50%, #141414 100%), url(${movie.poster})`
+        }}
       >
-        ← Back to Movies
-      </button>
-
-      <div className="row">
-        {/* Movie Poster */}
-        <div className="col-md-4 mb-4">
-          <img
-            src={movie.poster}
-            alt={`${movie.title} poster`}
-            className="movie-detail-poster"
-            loading="lazy"
-            width="400"
-            height="600"
-          />
-        </div>
-
-        {/* Movie Information */}
-        <div className="col-md-8">
-          <h1 className="movie-detail-title">{movie.title}</h1>
-
-          <div className="movie-detail-meta mb-3">
-            <span className="badge bg-danger me-2">{movie.genre}</span>
-            <span className="text-grey">{movie.year}</span>
-          </div>
-
-          <div className="mb-4">
-            <StarRating rating={movie.rating} />
-          </div>
-
-          {/* Movie Metadata */}
-          {(movie.runtime || movie.language || movie.director) && (
-            <div className="movie-metadata mb-4">
-              {movie.runtime && (
-                <span className="metadata-item">
-                  <i className="fas fa-clock me-2"></i>
-                  {movie.runtime}
-                </span>
-              )}
-              {movie.language && (
-                <span className="metadata-item">
-                  <i className="fas fa-language me-2"></i>
-                  {movie.language}
-                </span>
-              )}
-              {movie.director && (
-                <span className="metadata-item">
-                  <i className="fas fa-film me-2"></i>
-                  {movie.director}
-                </span>
-              )}
-            </div>
-          )}
-
-          {/* Streaming Availability */}
-          {movie.streaming && movie.streaming.length > 0 && (
-            <div className="streaming-section mb-4">
-              <h5 className="mb-2">
-                <i className="fas fa-tv me-2"></i>Available On
-              </h5>
-              <div className="streaming-badges">
-                {movie.streaming.map((platform, index) => (
-                  <span key={index} className={`streaming-badge ${platform.toLowerCase().replace(/[^a-z0-9]/g, '-')}`}>
-                    {platform}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Cast */}
-          {movie.cast && movie.cast.length > 0 && (
-            <div className="cast-section mb-4">
-              <h5 className="mb-3">
-                <i className="fas fa-users me-2"></i>Cast
-              </h5>
-              <div className="cast-list">
-                {movie.cast.map((actor, index) => (
-                  <span key={index} className="cast-member">
-                    {actor}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
-
-          <h3>Synopsis</h3>
-          <p className="movie-description">{movie.description}</p>
-
-          {/* User Rating Section */}
-          <div className="user-rating-section card-dark p-4 mt-4">
-            <h4 className="mb-3">Rate This Movie</h4>
-            <div className="rating-stars mb-2">
-              {[1, 2, 3, 4, 5].map((star) => (
-                <i
-                  key={star}
-                  className={`fas fa-star rating-star ${
-                    star <= (hoverRating || userRating) ? 'active' : ''
-                  }`}
-                  onClick={() => handleRatingClick(star)}
-                  onMouseEnter={() => setHoverRating(star)}
-                  onMouseLeave={() => setHoverRating(0)}
-                  style={{ cursor: 'pointer' }}
-                ></i>
-              ))}
-            </div>
-            {userRating > 0 && (
-              <p className="text-accent mb-0">
-                You rated this movie: {userRating} / 5 stars
-              </p>
-            )}
-          </div>
-
-          {/* Trailer Section */}
-          {movie.trailerUrl && (
-            <div className="trailer-section mt-4">
-              <h3 className="mb-3">
-                <i className="fas fa-play-circle me-2"></i>Watch Trailer
-              </h3>
-              <div className="trailer-container">
-                {showTrailer && trailerId ? (
-                  <iframe
-                    width="100%"
-                    height="450"
-                    src={`https://www.youtube.com/embed/${trailerId}?autoplay=1&rel=0`}
-                    title={`${movie.title} Trailer`}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="trailer-iframe"
-                    loading="lazy"
-                  ></iframe>
-                ) : (
-                  <button
-                    className="trailer-thumb"
-                    onClick={() => setShowTrailer(true)}
-                    aria-label="Play trailer"
-                  >
-                    <img
-                      src={`https://img.youtube.com/vi/${trailerId}/hqdefault.jpg`}
-                      alt={`${movie.title} trailer thumbnail`}
-                      loading="lazy"
-                      width="1280"
-                      height="720"
-                    />
-                    <div className="trailer-thumb-overlay">
-                      <i className="fas fa-play"></i>
-                    </div>
-                  </button>
-                )}
-              </div>
-            </div>
-          )}
-
-          {/* Reviews Section */}
-          <div className="mt-5">
-            <h3 className="mb-3">User Reviews ({movieReviews.length})</h3>
-
-            {movieReviews.length > 0 ? (
-              <div className="reviews-list">
-                {movieReviews.map((review) => (
-                  <div key={review.id} className="card-dark mb-3 p-3">
-                    <div className="d-flex justify-content-between align-items-center mb-2">
-                      <strong>{review.user}</strong>
-                      <StarRating rating={review.rating} />
-                    </div>
-                    <p className="text-grey mb-1">{review.comment}</p>
-                    <small className="text-grey">{review.date}</small>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              <p className="text-grey">No reviews yet for this movie.</p>
-            )}
-          </div>
+        <div className="hero-content-container">
+          <button
+            className="btn-back-movies"
+            onClick={() => navigate("/movies")}
+            aria-label="Go back to movies list"
+          >
+            <i className="fas fa-arrow-left"></i> Back to Movies
+          </button>
         </div>
       </div>
 
-      {/* You May Also Like Section */}
+      {/* Main Content */}
+      <div className="movie-content-container">
+        <div className="movie-content-grid">
+          {/* Left Column - Poster */}
+          <motion.div 
+            className="poster-column"
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="poster-wrapper">
+              <img
+                src={movie.poster}
+                alt={`${movie.title} poster`}
+                className="movie-detail-poster"
+                loading="lazy"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='600'%3E%3Crect width='400' height='600' fill='%231a1a1a'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='24' fill='%23666'%3ENo Poster%3C/text%3E%3C/svg%3E";
+                }}
+              />
+              
+              {/* Streaming Badges on Poster */}
+              {movie.streaming && movie.streaming.length > 0 && (
+                <div className="poster-streaming-badges">
+                  <div className="streaming-label">
+                    <i className="fas fa-tv"></i> Watch on
+                  </div>
+                  {movie.streaming.map((platform, index) => (
+                    <span key={index} className="streaming-badge">
+                      {platform}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+          </motion.div>
+
+          {/* Right Column - Details */}
+          <motion.div 
+            className="details-column"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            {/* Title and Meta */}
+            <div className="title-section">
+              <h1 className="movie-title-enhanced">{movie.title}</h1>
+              <div className="movie-meta-badges">
+                <span className="badge-genre">{movie.genre}</span>
+                <span className="badge-year">
+                  <i className="fas fa-calendar"></i> {movie.year}
+                </span>
+                <span className="badge-rating">
+                  <i className="fas fa-star"></i> {movie.rating}/5
+                </span>
+              </div>
+            </div>
+
+            {/* Quick Info */}
+            {(movie.runtime || movie.language || movie.director) && (
+              <div className="quick-info-grid">
+                {movie.runtime && (
+                  <div className="info-item">
+                    <i className="fas fa-clock"></i>
+                    <div>
+                      <div className="info-label">Runtime</div>
+                      <div className="info-value">{movie.runtime}</div>
+                    </div>
+                  </div>
+                )}
+                {movie.language && (
+                  <div className="info-item">
+                    <i className="fas fa-language"></i>
+                    <div>
+                      <div className="info-label">Language</div>
+                      <div className="info-value">{movie.language}</div>
+                    </div>
+                  </div>
+                )}
+                {movie.director && (
+                  <div className="info-item">
+                    <i className="fas fa-film"></i>
+                    <div>
+                      <div className="info-label">Director</div>
+                      <div className="info-value">{movie.director}</div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
+
+            {/* Synopsis */}
+            <div className="synopsis-section">
+              <h3 className="section-title">
+                <i className="fas fa-align-left"></i> Synopsis
+              </h3>
+              <p className="synopsis-text">{movie.description}</p>
+            </div>
+
+            {/* Cast */}
+            {movie.cast && movie.cast.length > 0 && (
+              <div className="cast-section-enhanced">
+                <h3 className="section-title">
+                  <i className="fas fa-users"></i> Cast
+                </h3>
+                <div className="cast-grid">
+                  {movie.cast.map((actor, index) => (
+                    <div key={index} className="cast-card">
+                      <i className="fas fa-user-circle cast-icon"></i>
+                      <span className="cast-name">{actor}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* User Rating */}
+            <div className="user-rating-card">
+              <h3 className="section-title">
+                <i className="fas fa-star-half-alt"></i> Rate This Movie
+              </h3>
+              <div className="rating-stars-container">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <i
+                    key={star}
+                    className={`fas fa-star rating-star-interactive ${
+                      star <= (hoverRating || userRating) ? 'active' : ''
+                    }`}
+                    onClick={() => handleRatingClick(star)}
+                    onMouseEnter={() => setHoverRating(star)}
+                    onMouseLeave={() => setHoverRating(0)}
+                  ></i>
+                ))}
+              </div>
+              {userRating > 0 && (
+                <p className="rating-feedback">
+                  <i className="fas fa-check-circle"></i>
+                  You rated this movie: {userRating}/5 stars
+                </p>
+              )}
+            </div>
+
+            {/* Trailer Section */}
+            {movie.trailerUrl && (
+              <div className="trailer-section-enhanced">
+                <h3 className="section-title">
+                  <i className="fas fa-play-circle"></i> Watch Trailer
+                </h3>
+                <div className="trailer-container-enhanced">
+                  {showTrailer && trailerId ? (
+                    <iframe
+                      width="100%"
+                      height="400"
+                      src={`https://www.youtube.com/embed/${trailerId}?autoplay=1&rel=0`}
+                      title={`${movie.title} Trailer`}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="trailer-iframe-enhanced"
+                      loading="lazy"
+                    ></iframe>
+                  ) : (
+                    <button
+                      className="trailer-thumbnail"
+                      onClick={() => setShowTrailer(true)}
+                      aria-label="Play trailer"
+                    >
+                      <img
+                        src={`https://img.youtube.com/vi/${trailerId}/maxresdefault.jpg`}
+                        alt={`${movie.title} trailer thumbnail`}
+                        loading="lazy"
+                        onError={(e) => {
+                          e.target.src = `https://img.youtube.com/vi/${trailerId}/hqdefault.jpg`;
+                        }}
+                      />
+                      <div className="trailer-play-overlay">
+                        <div className="play-button-large">
+                          <i className="fas fa-play"></i>
+                        </div>
+                      </div>
+                    </button>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* Reviews Section */}
+            <div className="reviews-section-enhanced">
+              <h3 className="section-title">
+                <i className="fas fa-comments"></i> User Reviews ({movieReviews.length})
+              </h3>
+
+              {movieReviews.length > 0 ? (
+                <div className="reviews-list-enhanced">
+                  {movieReviews.map((review) => (
+                    <div key={review.id} className="review-card">
+                      <div className="review-header">
+                        <div className="reviewer-info">
+                          <i className="fas fa-user-circle reviewer-avatar"></i>
+                          <strong className="reviewer-name">{review.user}</strong>
+                        </div>
+                        <StarRating rating={review.rating} />
+                      </div>
+                      <p className="review-comment">{review.comment}</p>
+                      <small className="review-date">
+                        <i className="fas fa-calendar-alt"></i> {review.date}
+                      </small>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="no-reviews">
+                  <i className="fas fa-comment-slash"></i>
+                  <p>No reviews yet. Be the first to review this movie!</p>
+                </div>
+              )}
+            </div>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Similar Movies Section */}
       {similarMovies.length > 0 && (
         <motion.div
-          className="similar-movies-section mt-5 pt-5"
+          className="similar-movies-section-enhanced"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <h2 className="mb-4">
-            <i className="fas fa-heart me-2"></i>You May Also Like
-          </h2>
-          <div className="row g-4">
-            {similarMovies.map((similarMovie) => (
-              <div key={similarMovie.id} className="col-6 col-md-4 col-lg-3 col-xl-2">
-                <MovieCard movie={similarMovie} />
-              </div>
-            ))}
+          <div className="similar-movies-container">
+            <h2 className="similar-title">
+              <i className="fas fa-heart"></i> You May Also Like
+            </h2>
+            <div className="similar-movies-grid">
+              {similarMovies.map((similarMovie) => (
+                <div key={similarMovie.id} className="similar-movie-item">
+                  <MovieCard movie={similarMovie} />
+                </div>
+              ))}
+            </div>
           </div>
         </motion.div>
       )}
-    </motion.div>
+    </div>
   );
 }
 

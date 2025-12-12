@@ -5,19 +5,23 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import MovieCard from "../components/MovieCard";
+import { useNavigate } from "react-router-dom";
 import moviesData from "../data/movies.json";
+import "../styles/Movies.css";
 
 function Movies() {
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedGenre, setSelectedGenre] = useState("All");
   const [isLoading, setIsLoading] = useState(true);
+  const [hoveredMovie, setHoveredMovie] = useState(null);
+  const [sortBy, setSortBy] = useState("title");
 
   // Get unique genres from movies data
   const genres = ["All", ...new Set(moviesData.map((movie) => movie.genre))];
 
-  // Filter movies based on search and genre
-  const filteredMovies = moviesData.filter((movie) => {
+  // Filter and sort movies
+  let filteredMovies = moviesData.filter((movie) => {
     const matchesSearch = movie.title
       .toLowerCase()
       .includes(searchTerm.toLowerCase());
@@ -26,97 +30,105 @@ function Movies() {
     return matchesSearch && matchesGenre;
   });
 
+  // Sort movies
+  if (sortBy === "rating") {
+    filteredMovies = [...filteredMovies].sort((a, b) => b.rating - a.rating);
+  } else if (sortBy === "year") {
+    filteredMovies = [...filteredMovies].sort((a, b) => b.year - a.year);
+  } else {
+    filteredMovies = [...filteredMovies].sort((a, b) =>
+      a.title.localeCompare(b.title)
+    );
+  }
+
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 500);
     return () => clearTimeout(timer);
   }, []);
 
+  const handleMovieClick = (movieId) => {
+    navigate(`/movies/${movieId}`);
+  };
+
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.05,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.4 },
+    },
+  };
+
   return (
-    <motion.div
-      className="movies-page"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <div className="movies-page-enhanced">
       {/* Hero Banner */}
       <motion.div
-        className="movies-hero-banner"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
+        className="movies-hero-enhanced"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.7 }}
       >
-        <div className="movies-hero-content">
+        <div className="hero-background-overlay"></div>
+        <div className="hero-content-wrapper">
           <motion.div
-            initial={{ x: -40, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
+            initial={{ y: 30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
           >
-            <h1 className="movies-hero-title">
-              <i className="fas fa-film me-3"></i>
-              Browse Movies
+            <h1 className="hero-main-title">
+              <i className="fas fa-film"></i> Discover Movies
             </h1>
-            <p className="movies-hero-subtitle">
-              Explore the latest releases, timeless classics, and hidden gems across every genre
+            <p className="hero-description">
+              Explore our complete collection of {moviesData.length} amazing films
             </p>
-            <div className="hero-tags">
-              <span className="hero-tag"><i className="fas fa-fire me-2"></i>New Releases</span>
-              <span className="hero-tag"><i className="fas fa-crown me-2"></i>Top Rated</span>
-              <span className="hero-tag"><i className="fas fa-clock me-2"></i>Now Trending</span>
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="movies-hero-image"
-            initial={{ x: 40, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.35, duration: 0.6 }}
-          >
-            <img
-              src="https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?w=700&h=450&fit=crop&auto=format&q=70"
-              alt="Latest movie highlight"
-              loading="lazy"
-              width="700"
-              height="450"
-            />
-            <div className="hero-image-overlay">
-              <span className="hero-badge">
-                <i className="fas fa-play me-2"></i>Now Showing
-              </span>
-            </div>
           </motion.div>
         </div>
       </motion.div>
 
-      {/* Search and Filter Section */}
-      <div className="filters-section mb-4">
-        <div className="row g-3 align-items-end">
+      {/* Filters Section */}
+      <div className="filters-container-enhanced">
+        <motion.div
+          className="filters-grid"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+        >
           {/* Search Bar */}
-          <div className="col-md-6">
-            <label htmlFor="search-input" className="form-label">
-              <i className="fas fa-search me-2"></i>Search Movies
+          <div className="filter-item search-box">
+            <label htmlFor="search-input" className="filter-label">
+              <i className="fas fa-search"></i> Search
             </label>
             <input
               id="search-input"
               type="text"
-              className="form-control search-input"
-              placeholder="Search by title..."
+              className="filter-input"
+              placeholder="Search movies..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              aria-label="Search movies by title"
             />
           </div>
 
           {/* Genre Filter */}
-          <div className="col-md-6">
-            <label htmlFor="genre-filter" className="form-label">
-              <i className="fas fa-layer-group me-2"></i>Filter by Genre
+          <div className="filter-item">
+            <label htmlFor="genre-filter" className="filter-label">
+              <i className="fas fa-layer-group"></i> Genre
             </label>
             <select
               id="genre-filter"
-              className="form-select filter-select"
+              className="filter-select"
               value={selectedGenre}
               onChange={(e) => setSelectedGenre(e.target.value)}
-              aria-label="Filter movies by genre"
             >
               {genres.map((genre) => (
                 <option key={genre} value={genre}>
@@ -125,48 +137,118 @@ function Movies() {
               ))}
             </select>
           </div>
-        </div>
-      </div>
 
-      {/* Results Count */}
-      <div className="d-flex justify-content-between align-items-center mb-3 movies-count-row">
-        <p className="text-grey mb-0">
-          Showing {filteredMovies.length} of {moviesData.length} movies
-        </p>
-        <span className="movies-count-badge">
-          <i className="fas fa-video me-2"></i>{moviesData.length} Total Titles
-        </span>
+          {/* Sort Filter */}
+          <div className="filter-item">
+            <label htmlFor="sort-filter" className="filter-label">
+              <i className="fas fa-sort"></i> Sort By
+            </label>
+            <select
+              id="sort-filter"
+              className="filter-select"
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+            >
+              <option value="title">Title (A-Z)</option>
+              <option value="rating">Rating (High to Low)</option>
+              <option value="year">Year (Newest First)</option>
+            </select>
+          </div>
+
+          {/* Results Count */}
+          <div className="filter-item results-count">
+            <span className="count-badge">
+              <i className="fas fa-film"></i> {filteredMovies.length} Results
+            </span>
+          </div>
+        </motion.div>
       </div>
 
       {/* Movies Grid */}
-      <div className="row">
+      <div className="movies-grid-container">
         {isLoading ? (
-          Array.from({ length: 8 }).map((_, idx) => (
-            <div key={idx} className="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-              <div className="card-dark movie-card skeleton-card">
-                <div className="poster-container skeleton-box"></div>
-                <div className="skeleton-lines">
-                  <span className="skeleton-line short"></span>
-                  <span className="skeleton-line"></span>
-                  <span className="skeleton-line thin"></span>
+          <div className="movies-grid">
+            {Array.from({ length: 20 }).map((_, idx) => (
+              <div key={idx} className="movie-card-enhanced skeleton">
+                <div className="skeleton-poster"></div>
+                <div className="skeleton-content">
+                  <div className="skeleton-line"></div>
+                  <div className="skeleton-line short"></div>
                 </div>
               </div>
-            </div>
-          ))
-        ) : filteredMovies.length > 0 ? (
-          filteredMovies.map((movie) => (
-            <div key={movie.id} className="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-              <MovieCard movie={movie} />
-            </div>
-          ))
-        ) : (
-          <div className="col-12 text-center py-5">
-            <h3 className="text-grey">No movies found</h3>
-            <p className="text-grey">Try adjusting your search or filters</p>
+            ))}
           </div>
+        ) : filteredMovies.length > 0 ? (
+          <motion.div
+            className="movies-grid"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            {filteredMovies.map((movie) => (
+              <motion.div
+                key={movie.id}
+                className="movie-card-enhanced"
+                variants={itemVariants}
+                onMouseEnter={() => setHoveredMovie(movie.id)}
+                onMouseLeave={() => setHoveredMovie(null)}
+                whileHover={{ scale: 1.05, zIndex: 10 }}
+                onClick={() => handleMovieClick(movie.id)}
+              >
+                <div className="movie-poster-wrapper">
+                  <img
+                    src={movie.poster}
+                    alt={movie.title}
+                    className="movie-poster"
+                    loading="lazy"
+                    onError={(e) => {
+                      e.target.onerror = null; // Prevent infinite loop
+                      e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='450'%3E%3Crect width='300' height='450' fill='%231a1a1a'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial, sans-serif' font-size='20' fill='%23666'%3ENo Image%3C/text%3E%3C/svg%3E";
+                    }}
+                  />
+                  <div className={`movie-overlay ${hoveredMovie === movie.id ? 'active' : ''}`}>
+                    <div className="overlay-content">
+                      <h3 className="movie-title">{movie.title}</h3>
+                      <div className="movie-meta">
+                        <span className="movie-rating">
+                          <i className="fas fa-star"></i> {movie.rating}
+                        </span>
+                        <span className="movie-year">{movie.year}</span>
+                      </div>
+                      <p className="movie-genre">
+                        <i className="fas fa-tag"></i> {movie.genre}
+                      </p>
+                      <button className="play-button">
+                        <i className="fas fa-play"></i> Watch
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        ) : (
+          <motion.div
+            className="no-results"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <i className="fas fa-search no-results-icon"></i>
+            <h3>No movies found</h3>
+            <p>Try adjusting your search or filters</p>
+            <button
+              className="reset-button"
+              onClick={() => {
+                setSearchTerm("");
+                setSelectedGenre("All");
+              }}
+            >
+              <i className="fas fa-redo"></i> Reset Filters
+            </button>
+          </motion.div>
         )}
       </div>
-    </motion.div>
+    </div>
   );
 }
 
